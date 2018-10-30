@@ -1,0 +1,24 @@
+namespace: console\tests
+actor_suffix: Tester
+paths:
+    tests: tests
+    output: tests/_output
+    data: tests/_data
+    support: tests/_support
+settings:
+    bootstrap: ..\_bootstrap.php
+    colors: false
+    memory_limit: 1024M
+modules:
+    config:
+        Yii2:
+            configFile: 'config/test-local.php'
+    enabled:
+        - AMQP:
+            host: 'localhost'
+            port: '5672'
+            username: 'guest'
+            password: 'guest'
+            vhost: '/'
+            queues: ['test_queue']
+            single_channel: false

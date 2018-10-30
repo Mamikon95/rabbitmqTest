@@ -3,7 +3,4 @@
 # Suite for unit or integration tests.
 
 actor: UnitTester
-modules:
-    enabled:
-        - Asserts
-        - \Helper\Unit
+suite_namespace: console\tests\unit

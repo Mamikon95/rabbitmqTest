@@ -1,5 +1,7 @@
 <?php
 
+namespace console\tests;
+
 
 /**
  * Inherited Methods
@@ -18,7 +20,7 @@
 */
 class UnitTester extends \Codeception\Actor
 {
-    use _generated\UnitTesterActions;
+    use \console\tests\_generated\UnitTesterActions;
 
    /**
     * Define custom actions here
